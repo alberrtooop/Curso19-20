@@ -1,0 +1,16 @@
+//comentario
+
+#comentario
+
+las variables se ponen $_NombreVariable no tienen tipo y no es fuertemente tipado
+
+DIFERENCIAS
+Comillas simples
+Si se quiere especificar una comilla simple dentro de un string, se escapa con una barra invertida \, y se hace lo mismo para especificar una barra invertida dentro 
+de un string \. Cualquier otra secuencia de escape o variable se mostrará literalmente, por ejemplo: \r, \n, $variable...
+
+Comillas Dobles
+Si el string está delimitado con comillas dobles "string", PHP interpretará más sentencias de escape
+
+. concatenas palabras 
+
