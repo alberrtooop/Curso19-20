@@ -1,5 +1,5 @@
 <?php
-$valor1 = 0;
+$valor1 = 68;
 $valor2 = 45;
 $ValorTotal = 0;
 define("TAM",10);
@@ -10,8 +10,9 @@ echo "<!DOCTYPE html>" ;
 echo "<html>" ;
     echo "<body>";
 
+    echo "<h1>Ejercicio 1 </h1>";
 
-    echo $ValorTotal = $valor1 + $valor2 ;
+    echo "{$valor1} + {$valor2} = ".($valor1 + $valor2);
 
     echo "<h1>Ejercicio 2 </h1>";
 
@@ -28,14 +29,14 @@ echo "<html>" ;
         }
 
     }
+    echo "<h1>Ejercicio 4 </h1>";
 
-    echo "<select name='select'>"
-    for ($i=0; $i < TAM ; $i++) { 
-        echo " <option value='Valor'.$i>Valor $i</option>" 
+    echo "<select name='select'>";
+    for ($i=1; $i <= TAM ; $i++) { 
+        echo " <option value ='Valor 1'> Valor $i</option>" ;
     }
     
-    echo " </select>"
-
+    echo " </select>";
 
 
     echo "</body>" ;
