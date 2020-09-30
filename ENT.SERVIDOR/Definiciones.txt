@@ -23,7 +23,7 @@ Ventajas
 
 fáciles de instalar y configurar 
 total, control del sistema 
-fácil de mantener y realiza Backus 
+fácil de mantener y realiza Backup
 
 Desventajas 
 

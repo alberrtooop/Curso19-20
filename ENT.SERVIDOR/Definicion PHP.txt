@@ -2,6 +2,14 @@
 
 #comentario
 
+/*
+
+	Comentario
+	
+*/
+
+<!-- Comentario-->
+
 las variables se ponen $_NombreVariable no tienen tipo y no es fuertemente tipado
 
 DIFERENCIAS
@@ -12,5 +20,27 @@ de un string \. Cualquier otra secuencia de escape o variable se mostrará liter
 Comillas Dobles
 Si el string está delimitado con comillas dobles "string", PHP interpretará más sentencias de escape
 
-. concatenas palabras 
+. -> concatenas palabras en php
+
+define('Nombre_Variable',valor) para crear constantes
+
+Operador
+
+!== Que no sea exactamente igual cuando comparas los tipos.
+=== Que el tipo de la variable que estoy comparando sea exactamente igual con el mismo tipo
+
+.= Guarda en el valor de la izquierda lo que haya en la derecha y lo concatena en el valor de la derecha
+
+Operador Ternario
+
+isset comprueba si tiene asignado un valor 
+$edad = (isset($edad)) ? true : false;
+
+
+
+
+
+
+
+
 
