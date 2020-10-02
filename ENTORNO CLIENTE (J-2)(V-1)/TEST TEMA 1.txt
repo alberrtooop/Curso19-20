@@ -1,0 +1,26 @@
+1 Lenguajes de programación en entorno cliente
+
+A- Lenguajes que nos permiten dar formato y estilo a una página web (HTML, CSS, etc.).
+B- Los más utilizados en la actualidad son: ASP, PERL y PHP.
+C- Lenguajes que nos permite aportar dinamismo a páginas web (lenguajes scripting tales como JavaScript o VBScript).
+D- A y C Son Correcta.
+
+Correcta D
+
+2 ¿Que son las herramientas de programación?
+
+A- Es un software que permite monitorear y en algunos casos controlar la funcionalidad del hardware.
+B- Son aquellas que permiten realizar programas, aplicaciones o rutinas dirigidas a ejecutar tareas complejas de una forma más práctica.
+C- Es un código de fuente para desarrolladores de software.
+D- Un servicio que permite almacenar repositorios en nube.
+
+Correcta B
+
+3 ¿Ventajas de la programación Estructurada?
+
+A- Los programas son más fáciles de entender, pueden ser leídos de forma secuencial y no hay necesidad de tener que rastrear saltos de líneas.
+B- Se permite la estructuración por módulos.
+C- Es más fácil introducir cambios porque ello requiere menor modificaciones en el código que ya está funcionando.
+D- Si utilizas la programación POO en tu código, es más fácil tenerlo más estructurado y separado, ya que el código podrá ser usado en otros proyectos.
+
+Correcta A
