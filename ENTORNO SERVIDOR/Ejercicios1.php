@@ -29,19 +29,18 @@
 
         phpinfo();
 
-
         echo "<h1>Ejercicio 3 </h1>";
 
-        echo "<table>"; //creamos la tabla
+        echo "<table>";
         $contador = 1;
         for ($i = 1; $i <= TAM; $i++) {
-            if ($i % 2 == 0) //Si la división de la variable $n1 entre dos da 0 creamos una fila de color
+            if ($i % 2 == 0)
                 echo "<tr>";
             else
-                echo "<tr class = 'color'>"; //creamos fila blanca cuando no sea divisible entre 2
+                echo "<tr class = 'color'>";
             for ($j = 1; $j <= TAM; $j++) {
-                echo "<td>", $contador, "</td>"; //creamos una celda y mostramos el número
-                $contador++; //sumamos 1 al número mostrado para la siguiente vuelta del bucle
+                echo "<td>", $contador, "</td>";
+                $contador++;
             }
             echo "</tr>"; //cerramos la fila
         }
