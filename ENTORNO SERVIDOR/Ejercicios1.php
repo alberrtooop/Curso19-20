@@ -51,7 +51,7 @@
 
         echo "<select name='selector'>";
         for ($i = 1; $i <= TAM; $i++) {
-            echo " <option value ='Valor 1'> Valor $i</option>";
+            echo " <option value ='Valor 1'> Valor $i </option>";
         }
         echo " </select>";
         ?>

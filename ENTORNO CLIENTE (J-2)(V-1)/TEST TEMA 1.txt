@@ -7,7 +7,7 @@ D- A y C Son Correcta.
 
 Correcta D
 
-2 ¿Que son las herramientas de programación?
+2 ¿Qué son las herramientas de programación?
 
 A- Es un software que permite monitorear y en algunos casos controlar la funcionalidad del hardware.
 B- Son aquellas que permiten realizar programas, aplicaciones o rutinas dirigidas a ejecutar tareas complejas de una forma más práctica.
