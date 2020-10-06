@@ -1,0 +1,40 @@
+@- at
+Copia de seguridad= Backup
+Marcador= 
+Cargar/arrancar= start up / boot
+Casilla= box
+Un defecto en el programa= fix
+Contraseña= password
+Eliminar/borrar= delete / drop
+Cargar/descargar= download
+Borrador= draft
+Arrastrar= drag
+Archivo= file
+Carpeta= folder
+Pen drive!! (no existe en ingles)= memory stick
+Ejecutar un programa= to run 
+Guardar= save
+Motor de busqueda= searching
+Adjuntar= append
+Barra de herramientas= bar
+Actualizar= update
+
+Present Perfect
+
+	have + 3 rd been/ed
+
+ever  	  been + ing  
+never
+always
+just
+ 
+Past simple
+yesterday
+last year
+last week
+.... ago
+
+
+
+
+

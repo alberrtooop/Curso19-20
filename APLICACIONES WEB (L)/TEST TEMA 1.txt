@@ -1,0 +1,9 @@
+¿Qué es un archivo hosts?
+A- Es un archivo que puede ser creado por un programa cuando no puede asignar memoria suficiente para sus tareas. 
+B- El hosts es un archivo de texto pequeño pero extremadamente útil que almacena nombres con sus correspondientes direcciones IP.
+C- Son computadoras u otros dispositivos conectados a una red que proveen y utilizan servicios de ella. 
+D- Se usa para guardar los procesos que no se han podido mantener en memoria física. 
+
+
+
+Correcta B
