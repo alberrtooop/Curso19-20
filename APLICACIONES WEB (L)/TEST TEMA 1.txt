@@ -7,3 +7,25 @@ D- Se usa para guardar los procesos que no se han podido mantener en memoria fí
 
 
 Correcta B
+
+
+¿Qué protocolo usa un Servidor WEB?
+A- DHCP
+B- SMTP
+C- FTP	
+D- HTTP
+
+
+
+Correcta D
+
+
+Modelo TCP/IP según el modelo DoD
+
+A- Física, Enlace de datos, Red, Transporte, Sesión, Presentación, Aplicación
+B- Acceso a Red, Aplicación, Transporte 
+C- Acceso a Red, Internet, Transporte, Aplicación 
+D- Física, Red, Transporte, Presentación, Aplicación 
+
+
+Correcta C
