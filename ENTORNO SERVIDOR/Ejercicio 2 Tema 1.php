@@ -31,10 +31,10 @@
     echo "<h2>Ejercicio 3</h2>";
     echo "Vamos a simular Tiradas </br>";
 
-    $dados = rand(2, 6);
+    $dados = rand(2, 7);
     $totalPuntuacion = 0;
     for ($i = 1; $i <= $dados; $i++) {
-        $puntuacionDados = rand(1, 6);
+        $puntuacionDados[$i] = rand(1, 6);
         $totalPuntuacion += $puntuacionDados;
         echo "El valor de la tirada " . $i . " es " . $puntuacionDados;
         echo "</br>";
@@ -45,9 +45,11 @@
     $Nnegativo = 0;
     $Npositivo = 0;
     $Ncero = 0;
+    define('TAM_FILA', 5);
+    define('TAM_COL', 6);
 
-    for ($i = 0; $i < 5; $i++) {
-        for ($j = 0; $j < 6; $j++) {
+    for ($i = 0; $i < TAM_FILA; $i++) {
+        for ($j = 0; $j < TAM_COL; $j++) {
             $NumeroMatriz = rand(-5, 5);
             if ($NumeroMatriz < 0) {
                 $Nnegativo++;

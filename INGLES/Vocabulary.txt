@@ -1,27 +1,27 @@
 @- at
-Copia de seguridad= Backup
-Marcador= 
+Copia de seguridad= Back up
+Marcador= bookmark 
 Cargar/arrancar= start up / boot
 Casilla= box
-Un defecto en el programa= fix
+Un defecto en el programa= bug
 Contraseña= password
 Eliminar/borrar= delete / drop
-Cargar/descargar= download
+Cargar/descargar= upload / download
 Borrador= draft
 Arrastrar= drag
 Archivo= file
 Carpeta= folder
 Pen drive!! (no existe en ingles)= memory stick
-Ejecutar un programa= to run 
+Ejecutar un programa= run a programme
 Guardar= save
-Motor de busqueda= searching
-Adjuntar= append
-Barra de herramientas= bar
+Motor de busqueda= searching engine
+Adjuntar= attach
+Barra de herramientas= tool bar
 Actualizar= update
 
 Present Perfect
 
-	have + 3 rd been/ed
+	have/has + 3 rd been/ed
 
 ever  	  been + ing  
 never
@@ -33,6 +33,21 @@ yesterday
 last year
 last week
 .... ago
+
+
+have + ed 	just
+ 3rd 		ever
+		never
+		already
+		since Desde...
+		form  desde hace...(20 años)
+
+Past perfect
+
+Sujeto +  had / hadn't + participio pasado
+
+
+
 
 
 
