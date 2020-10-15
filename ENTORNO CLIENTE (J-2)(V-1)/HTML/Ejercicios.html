@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <title></title>
+        <style type="text/css">
+            #Version{
+                height: 20%;
+                width: 20%;
+            }
+        </style>
+        <script type="text/javascript" src="./Script/ScriptPrueba.js"></script>
+    </head>
+    <body>
+        <h1>Ejercicos JavaScript</h1>
+        <h2>Version del navegador</h2>
+        <div id="Version" onmouseover="VersionNavegador()" onmouseout="VersionAnterior(this)">Ver Version</div>
+        <h2>Mostrar URL actual</h2>
+        <div id="URL" >
+            <button onclick="MostarURL()">Mostrar URL </button>
+        </div>
+         <h2>Contar titulo y parrafo</h2>
+         <div class="Contar">
+             <h1  >Titulo ejercicio</h1>
+             <p >Este parrafo nos cuenta las letras que tiene</p>
+             <button onclick="ContarLetras()">Contar</button>
+         </div>
+    </body>
+</html>
