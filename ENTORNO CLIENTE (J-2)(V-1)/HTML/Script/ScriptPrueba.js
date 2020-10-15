@@ -14,38 +14,41 @@ function MostarURL() {
 }
 
 function ContarLetras() {
-    Total = document.getElementByClass("Contar").value;
-    numeroCaracteres = Total.length;
-    //Quitar Caracteres 
-    inicioBlanco = /^ /;
-    finBlanco = / $/;
-    variosBlancos = /[ ]+/g;
-    //Reemplazarlos
-    Total = Total.replace(inicioBlanco, "");
-    Total = Total.replace(finBlanco, "");
-    Total = Total.replace(variosBlancos, " ");
-    //
-    textoAreaDividido = Total.split(" ");
-    numeroPalabras = textoAreaDividido.length;
+    var parrafoH1 = document.getElementById("ContarH1").innerHTML;
+    var parrafoP = document.getElementById("ContarP").innerHTML;
+    var texto = "El total de letras de H1 es: " + parrafoH1.length + "</br>";
+    texto += "El total de letras de P es: " + parrafoP.length;
+    document.getElementById("BotonContar").innerHTML = texto;
+}
+function InvertirColores() {
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+}
 
-    if (numeroCaracteres == 1) {
-        tC = "carácter";
-    } else {
-        tC = " caracteres";
-    }
-    if (numeroPalabras == 1) {
-        tP = "palabra";
-    } else {
-        tP = " palabras";
-    }
+function AumentarTamano() {
+    document.getElementById("Aumento").style.fontSize = "x-large";
+}
 
-    alert(numeroCaracteres + tC + "\n" + numeroPalabras + tP);
+function MargenePuntos() {
+    document.body.style.margin = "250px";
+}
 
-
+function VentanaActual() {
+    document.getElementById("Tamano").innerHTML =
+            "Tamaño de la ventana Actual: " + screen.width + " x " + screen.height;
 }
 
 
+function MostrarElemento() {
+    document.getElementById("TextoOculto").style.display = 'block';
+}
+function OcultarElemento() {
+    document.getElementById("TextoOculto").style.display = 'none';
+}
 
+function DirigirGoogle() {
+    window.location.href = 'http://www.google.es';
+}
 
 
 /*

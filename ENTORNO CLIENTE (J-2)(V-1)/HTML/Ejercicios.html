@@ -14,17 +14,67 @@
     </head>
     <body>
         <h1>Ejercicos JavaScript</h1>
-        <h2>Version del navegador</h2>
+        <h2>Version del navegador 1</h2>
         <div id="Version" onmouseover="VersionNavegador()" onmouseout="VersionAnterior(this)">Ver Version</div>
-        <h2>Mostrar URL actual</h2>
+        <h2>Mostrar URL actual 2</h2>
         <div id="URL" >
             <button onclick="MostarURL()">Mostrar URL </button>
         </div>
-         <h2>Contar titulo y parrafo</h2>
-         <div class="Contar">
-             <h1  >Titulo ejercicio</h1>
-             <p >Este parrafo nos cuenta las letras que tiene</p>
-             <button onclick="ContarLetras()">Contar</button>
-         </div>
+        <h2>Contar titulo y parrafo 3</h2>
+        <div id="BotonContar">
+            <h1 id="ContarH1">Titulo ejercicio</h1>
+            <p id="ContarP">Este parrafo nos cuenta las letras que tiene</p>
+            <button onclick="ContarLetras()">Contar</button>
+        </div>
+        <h2>Invertir colores de fondo 4</h2>
+        <button onclick="InvertirColores()">Invertir Colores</button>
+
+        <h2>Aumentar tamaño letra 5</h2>
+        <p id="Aumento">Aumenta el tamaño cuando lo pulsamos</p>
+        <button onclick="AumentarTamano()">Aumenta Tamaño</button>
+
+        <div>
+            <h2>Usar margenes en punto 6</h2>
+            <p id="Texto">
+                El diario As es una publicación deportiva española de tirada diaria, y de pago y con distribución
+                matinal editado por el Grupo PRISA. Fue fundado en 1967 por Luis Montiel Balanzat y es el segundo 
+                diario deportivo de España, tanto en tirada como en ventas y distribución. Asimismo, su web as.com 
+                ocupa en 2010 la tercera posición por número de visitas en el ranking de diarios nacionales.
+                </br>
+                El diario As es una publicación deportiva española de tirada diaria, y de pago y con distribución
+                matinal editado por el Grupo PRISA. Fue fundado en 1967 por Luis Montiel Balanzat y es el segundo 
+                diario deportivo de España, tanto en tirada como en ventas y distribución. Asimismo, su web as.com 
+                ocupa en 2010 la tercera posición por número de visitas en el ranking de diarios nacionales.
+                </br>
+                El diario As es una publicación deportiva española de tirada diaria, y de pago y con distribución
+                matinal editado por el Grupo PRISA. Fue fundado en 1967 por Luis Montiel Balanzat y es el segundo 
+                diario deportivo de España, tanto en tirada como en ventas y distribución. Asimismo, su web as.com 
+                ocupa en 2010 la tercera posición por número de visitas en el ranking de diarios nacionales.
+            </p>
+            <button onclick="MargenePuntos()">Margen</button>
+        </div>
+
+        <h2>Tamaño de la ventana actual 7</h2>
+        <div id="Tamano">        
+            <button onclick="VentanaActual()">Tamaño Actual</button>
+        </div>
+
+        <div>
+            <h2>Ejercicio de ocultar y mostar elemento</h2>
+            <p id="TextoOculto">
+                diario deportivo de España, tanto en tirada como en ventas y distribución. Asimismo, su web as.com 
+                ocupa en 2010 la tercera posición por número de visitas en el ranking de diarios nacionales.
+            </p>
+
+            <button onclick="OcultarElemento()">Ocultar</button>
+            <button onclick="MostrarElemento()">Mostrar</button>
+        </div>
+
+        <div>
+            <h2>Dirigir google</h2>
+            <button onclick="DirigirGoogle()">Google</button>
+        </div>
+
+
     </body>
 </html>
