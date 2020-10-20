@@ -2,6 +2,7 @@
 
 class Coches
 {
+    var $Movimiento = false;
     //Variables
     private $tipoCombustibe;
     private $cantidadCombustible;
@@ -76,14 +77,16 @@ class Coches
 
     function isMovimiento($Movimiento)
     {
+        $Movimiento = $Movimiento;
         if ($Movimiento == true) {
-            echo "El coche esta moviendose";
+            echo "El coche esta moviendose </br>";
         } else {
-            echo "El coche se encuentra parado";
+            echo "El coche se encuentra parado </br>";
         }
     }
     function isEstado($Movimiento)
     {
+        $Movimiento = $Movimiento;
         if ($Movimiento == true) {
             return true;
         } else {
@@ -92,11 +95,11 @@ class Coches
     }
 
 
-    function isReserva($cantidadCombustible)
+    function EstaReserva()
     {
-        $Reserva = $this->cantidadMaxCombustible - $this->LitrosSinReserva;
 
-        if ($cantidadCombustible > $Reserva) {
+        if (($this->cantidadCombustible - 10) >= 10) {
+            echo "litros para entrar en reserva son " . $this->LitrosSinReserva = ($this->cantidadCombustible - 10) . "</br>";
             return true;
         } else {
             return false;
@@ -106,19 +109,42 @@ class Coches
 
     function Acelerar()
     {
-        $this->velociad + 5;
+        echo "Acelerando !!!! </br>";
+        echo "</br>";
+        $this->velociad += 5;
     }
 
     function Frenar()
     {
-        $this->velociad - 5;
+        echo "Frenando !!!! </br>";
+        echo "</br>";
+        $this->velociad -= 5;
     }
-    /*
-    function repostar($EstadoCoche, $cantidadRepostar)
+
+
+
+
+    function repostar($cantidadRepostar)
     {
-        $estado = $this->isEstado($EstadoCoche);
-        if ($estado == true && $this->cantidadMaxCombustible > $cantidadRepostar);
-    }*/
+
+        $estadoAhora = $this->isEstado($this->Movimiento);
+        if ($estadoAhora == false && ($cantidadRepostar + $this->cantidadCombustible) >= $this->cantidadMaxCombustible) {
+
+            $cantidadRepostar = $this->cantidadMaxCombustible - $this->cantidadCombustible;
+            $this->LitrosSinReserva =  $this->cantidadMaxCombustible - 10;
+            echo "Has repostado { $cantidadRepostar } Litros 1 </br>";
+            echo "</br>";
+        } else if ($estadoAhora == true) {
+            echo "apagaaaa!! el coche para repostar </br>";
+            echo "</br>";
+        } else {
+            $this->cantidadCombustible += $cantidadRepostar;
+            $this->LitrosSinReserva = ($this->cantidadCombustible - 10);
+
+            echo "Has repostado {$cantidadRepostar} Litros 2 </br>";
+            echo "</br>";
+        }
+    }
 
 
     function EstadoCoche()
