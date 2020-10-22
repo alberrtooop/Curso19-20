@@ -1,15 +1,14 @@
 <?php
 
-class clasesJugador {
-    
+class Jugadore {
+
     //PROPIEDADES
     private $numeroJug;
     private $ptos;
 
     //CONSTRUCTOR
-    function __construct($numeroJug, $ptos) {
+    function __construct($numeroJug) {
         $this->numeroJug = $numeroJug;
-        $this->ptos = $ptos;
     }
 
     //GETTER
@@ -20,10 +19,12 @@ class clasesJugador {
     function getPtos() {
         return $this->ptos;
     }
-    
+
     //METODOS
     function addPtos($ptos) {
-        
+        if ($ptos > 0) {
+            $this->ptos += $ptos;
+        }
     }
 
 }
