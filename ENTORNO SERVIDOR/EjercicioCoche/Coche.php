@@ -1,7 +1,7 @@
 <?php
 include "Coches.php";
 
-$Coches1 = new Coches("Diesel", 30, 120, 80, 20);
+$Coches1 = new Coches("Diesel", 30, 120, 80, 10);
 
 
 
@@ -16,7 +16,11 @@ $Coches1 ->EstadoCoche();
 echo $Coches1->Frenar();
 $Coches1 ->EstadoCoche();
 echo $Coches1->Acelerar();
-$Coches1->isEstado(false);
-echo $Coches1->repostar (32);
+$Coches1->isEstado(true);
+echo $Coches1->repostar (-5);
+echo $Coches1->Acelerar();
+echo $Coches1->Acelerar();
+
+
 
 $Coches1 ->EstadoCoche();
