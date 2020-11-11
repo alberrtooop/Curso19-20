@@ -1,41 +1,42 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html>
+    <head>
+        <title>Calculadora</title>
+        <script type="text/javascript" src="calculadora.js"></script>
+        <link href="Estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
 
-<head>
-    <title>Calculadora</title>
-    <link rel="stylesheet" type="text/css" href="calculadora.css" />
-    <script type="text/javascript" src="calculadora.js"></script>
-    <link rel="stylesheet" href="Estilos.css">
-</head>
+    <body>
+        <div class="calculadora">
+            <form name="calculadora" id="calculadora">
+                <input type="text" name="txtcaja">
+                <p>
+                    <input type="button" value="7" onclick="SacarNumero('7')" />
+                    <input type="button" value="8" onclick="SacarNumero('8')" />
+                    <input type="button" value="9" onclick="SacarNumero('9')" />
+                    <input type="button" value="CE" onclick="Limpiar()" />
+                
+                </p>
+                    <input type="button" name="CERO" value="0" onclick="SacarNumero('0')" />
+                <p>
+                    <input type="button" value="4" onclick="SacarNumero('4')" />
+                    <input type="button" value="5" onclick="SacarNumero('5')" />
+                    <input type="button" value="6" onclick="SacarNumero('6')" />
+                </p>
+                <p>
+                    <input type="button" value="1" onclick="SacarNumero('1')" />
+                    <input type="button" value="2" onclick="SacarNumero('2')" />
+                    <input type="button" value="3" onclick="SacarNumero('3')" />
 
-<body>
-    <div class="calculadora">
-        <form name="calculadora" id="calculadora">
-            <p id="textoPantalla">0</p>
-            <p>
-                <input type="button" value="7" onclick="SacarNumero('7')" />
-                <input type="button" value="8" onclick="SacarNumero('8')" />
-                <input type="button" value="9" onclick="SacarNumero('9')" />
-            </p>
-            <p>
-                <input type="button" value="4" onclick="SacarNumero('4')" />
-                <input type="button" value="5" onclick="SacarNumero('5')" />
-                <input type="button" value="6" onclick="SacarNumero('6')" />
-            </p>
-            <p>
-                <input type="button" value="1" onclick="SacarNumero('1')" />
-                <input type="button" value="2" onclick="SacarNumero('2')" />
-                <input type="button" value="3" onclick="SacarNumero('3')" />
-               
-            </p>
-            <p>
-                <input type="button" value="+" onclick="Accion('+')" />
-                <input type="button" value="-" onclick="Accion('-')" />
-                <input type="button" value="=" onclick="Igual()" />
-            </p>
-        </form>
-    </div>
-</body>
+                </p>
+                <p>
+                    <input type="button" value="+" onclick="SacarNumero('+')" />
+                    <input type="button" value="-" onclick="SacarNumero('-')" />
+                    <input type="button" value="=" onclick="Igual()" />
+                </p>
+                
+            </form>
+        </div>
+    </body>
 
 </html>

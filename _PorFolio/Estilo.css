@@ -17,7 +17,7 @@ ul, ol, li {
     display: none;
 }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
 ul.nav-items{
     display: -webkit-box;;
 }
@@ -36,7 +36,7 @@ ul.nav-items a {
 }
 
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
 
 header, #central-content {

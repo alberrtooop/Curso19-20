@@ -1,0 +1,51 @@
+input[type="button"]:hover{
+    background-color:slategray;
+    cursor: pointer;
+}
+form{
+    background-color:#727970;
+    text-align: center;
+    height:390px;
+    width:380px;
+}
+input[type="text"]{
+    background-color:black;
+    border:0px;
+    width:337px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    text-align: right;
+    pointer-events: none;
+margin-right:9px;
+}
+
+input[name="txtcaja"]{
+    margin-top: 5%;
+    font-size: 26px;
+}
+input[type="button"]{
+    font-size: 18px;
+    font-weight:lighter;
+    font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    width:60px;
+    border:0px;
+    height: 60px;
+    color: white;
+    background-color:blue;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+input[name="CERO"]{
+     font-size: 19px;
+    font-weight:lighter;
+    float:right;
+    height:212px;
+    margin-right:25px;
+}
+
+
+body{
+    background-color:#f1f1f1;
+}

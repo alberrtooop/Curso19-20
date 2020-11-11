@@ -11,8 +11,15 @@
         <button>Lista jugadores</button>
         <?php
         $conexion = new ConexionHeredada();
-
-        $conexion->hola();
+        echo "<table>";
+        foreach ($conexion->MaximoAnatador() as $equipo) {
+            echo "<tr>";
+            foreach ($equipo as $contenido) {
+                echo "<td>" . $contenido . "</td>";
+            }
+            echo "</tr>";
+        }
+        echo "</table>";
         ?>
     </body>
 </html>

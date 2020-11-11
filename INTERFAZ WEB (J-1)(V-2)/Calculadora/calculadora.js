@@ -2,30 +2,21 @@ var numeroGuardar;
 var operador;
 var numero;
 
+
 function SacarNumero(numero) {
-    pantalla = document.getElementById("textoPantalla").innerHTML = parseInt(numero);
-    numeroGuardar = parseInt(numero);
-    return numeroGuardar;
-}
+    var caja2 = document.calculadora.txtcaja.value;
 
-function Accion(operador) {
-    switch (operador) {
-        case '+':
-            pantalla = document.getElementById("textoPantalla");
-            pantalla.innerHTML = '+';
-            numeroGuardar = eval(SacarNumero(numero)) ;
-
-            break;
-        case '-':
-            pantalla = document.getElementById("textoPantalla");
-            pantalla.innerHTML = '-';
-            numeroGuardar = eval(SacarNumero(numero));
-
-            break;
-
+    //var resultado = Mostar();
+    if (caja2 == 0 || isNaN(numero)) {
+        document.calculadora.txtcaja.value = numero;
+    } else {
+        document.calculadora.txtcaja.value = caja2 + numero;
     }
 }
 
 function Igual() {
-    document.getElementById("textoPantalla").innerHTML = numeroGuardar;
+    document.calculadora.txtcaja.value = eval(document.calculadora.txtcaja.value);
+}
+function Limpiar() {
+    document.calculadora.txtcaja.value = 0;
 }
