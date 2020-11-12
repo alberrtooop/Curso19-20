@@ -8,7 +8,7 @@ function SacarNumero(numero) {
 
     //var resultado = Mostar();
     if (caja2 == 0 || isNaN(numero)) {
-        document.calculadora.txtcaja.value = numero;
+        document.calculadora.txtcaja.value = numero + caja2 ;
     } else {
         document.calculadora.txtcaja.value = caja2 + numero;
     }
