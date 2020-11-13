@@ -5,7 +5,7 @@ input[type="button"]:hover{
 form{
     background-color:#727970;
     text-align: center;
-    height:390px;
+    height:500px;
     width:380px;
 }
 input[type="text"]{
@@ -17,13 +17,20 @@ input[type="text"]{
     color: white;
     text-align: right;
     pointer-events: none;
-margin-right:9px;
+    margin-right:9px;
 }
 
-input[name="txtcaja"]{
+
+input[name="txtcaja2"]{
+    font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
     margin-top: 5%;
     font-size: 26px;
 }
+
+input[name="txtcaja"]{
+    font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
 input[type="button"]{
     font-size: 18px;
     font-weight:lighter;
@@ -37,12 +44,20 @@ input[type="button"]{
     margin-left: 10px;
 }
 
-input[name="CERO"]{
+input[name="IGUAL"]{
      font-size: 19px;
     font-weight:lighter;
     float:right;
-    height:212px;
+    height:135px;
     margin-right:25px;
+}
+
+input[name="CERO"]{
+    font-size: 19px;
+   font-weight:lighter;
+   float:left;
+   width: 160px;
+   margin-right: 20px;
 }
 
 
