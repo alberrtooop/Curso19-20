@@ -2,8 +2,8 @@ var numeroGuardar;
 var operador;
 var numero;
 var nuevo = false;
+var estadoNegativo = false;
 
-window.open("Calculadora.html","ventana1","width=400,height=400,resizable=no");
 function SacarNumero(numero) {
     var caja = document.calculadora.txtcaja.value;
     var caja2 = document.calculadora.txtcaja2.value;
@@ -13,7 +13,7 @@ function SacarNumero(numero) {
         document.calculadora.txtcaja2.value = numero;
     } else {
         if (nuevo === true) {
-            if (numero === "+" || numero === "-" || numero === "*" || numero === "/") {
+            if (numero === "+" || numero === "-" || numero === "×" || numero === "÷") {
                 document.calculadora.txtcaja.value = caja + numero;
                 document.calculadora.txtcaja2.value = caja2.concat(numero);
             } else {
@@ -29,7 +29,7 @@ function SacarNumero(numero) {
     }
 }
 
-function backSpace() {
+function retroceder() {
     var value = document.getElementById("txtcaja").value;
     if (value.substr(0, value.length - 1) === "") {
         document.getElementById("txtcaja").value = "0";
@@ -49,7 +49,12 @@ function Coma() {
 
 function MasMenos() {
     document.calculadora.txtcaja.value *= -1;
-    document.calculadora.txtcaja2.value *= -1;
+    if (estadoNegativo === true) {
+        document.calculadora.txtcaja2.value = document.calculadora.txtcaja.value;
+    } else {
+        document.calculadora.txtcaja2.value *= -1;
+        estadoNegativo = false;
+    }
 }
 
 function Igual() {
@@ -61,6 +66,7 @@ function Igual() {
         } else {
             document.calculadora.txtcaja.value = eval(Resultado2);
             nuevo = true;
+            estadoNegativo = true;
         }
 
     } catch (e) {
