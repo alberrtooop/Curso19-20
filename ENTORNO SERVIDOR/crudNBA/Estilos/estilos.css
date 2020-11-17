@@ -11,18 +11,17 @@ select{
     margin-top: 1%;
 }
 
-.Izquierda{
-    float: left;
+.Bloque{
+    display: flex; 
+    text-align: center;
+    vertical-align: baseline;
+}  
+.bloqueInsert{
+    display: inline-block;
+    text-align: center;
 }
 
-.Derecha{
-    float: Right;
-}
 
-#centro{
-    margin-left: 25%;
-    margin-right: 25%;  
-}
 
 input[type="submit"]{
     font-family: verdana;
