@@ -13,7 +13,7 @@ function SacarNumero(numero) {
         document.calculadora.txtcaja2.value = numero;
     } else {
         if (nuevo === true) {
-            if (numero === "+" || numero === "-" || numero === "×" || numero === "÷") {
+            if (numero === "+" || numero === "-" || numero === "*" || numero === "/") {
                 document.calculadora.txtcaja.value = caja + numero;
                 document.calculadora.txtcaja2.value = caja2.concat(numero);
             } else {
@@ -40,7 +40,6 @@ function retroceder() {
     }
 }
 
-
 function Coma() {
     var caja = document.calculadora.txtcaja.value;
     document.calculadora.txtcaja.value = caja + ".";
@@ -48,12 +47,22 @@ function Coma() {
 }
 
 function MasMenos() {
-    document.calculadora.txtcaja.value *= -1;
-    if (estadoNegativo === true) {
-        document.calculadora.txtcaja2.value = document.calculadora.txtcaja.value;
+    var caja2 = document.calculadora.txtcaja.value;
+    if (caja2 > 0) {
+        if (nuevo === true) {
+            document.calculadora.txtcaja2.value = caja2;
+            document.calculadora.txtcaja.value = "(" + document.calculadora.txtcaja.value * -1 + ")";
+            document.calculadora.txtcaja2.value = "(" + document.calculadora.txtcaja2.value * -1 + ")";
+            nuevo = false;
+        } else {
+            document.calculadora.txtcaja.value = "(" + document.calculadora.txtcaja.value * -1 + ")";
+            document.calculadora.txtcaja2.value = "(" + document.calculadora.txtcaja2.value * -1 + ")";
+        }
+
     } else {
-        document.calculadora.txtcaja2.value *= -1;
-        estadoNegativo = false;
+        cajaplus = caja2.replace(/[-|(|)]/g, "");
+        document.calculadora.txtcaja.value = cajaplus;
+        document.calculadora.txtcaja2.value = cajaplus;
     }
 }
 
@@ -72,7 +81,6 @@ function Igual() {
     } catch (e) {
         document.calculadora.txtcaja.value = "SyntaxError";
     }
-
 }
 function Limpiar() {
     document.calculadora.txtcaja2.value = "";

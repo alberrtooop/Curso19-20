@@ -1,13 +1,16 @@
 input[type="button"]:hover{
     background-color:slategray;
-    cursor: pointer;
 }
+
 form{
     background-color: #484848;
+    padding-left: 11px;
     text-align: center;
-    height:500px;
-    width:380px;
+    height: 500px;
+    width: 380px;
+    
 }
+
 input[type="text"]{
     background-color:#cddecc;
     border:0px;
@@ -16,7 +19,6 @@ input[type="text"]{
     font-size: 20px;
     color: white;
     text-align: right;
-    pointer-events: none;
     margin-right:9px;
 }
 
@@ -27,8 +29,14 @@ input[name="txtcaja2"]{
     color:black;
 }
 
+input:focus{
+    outline: none;
+    cursor: pointer;
+}
+
 input[name="txtcaja"]{
     font-family: digital;
+    font-size: 26px;
     color:black;
 }
 
@@ -52,7 +60,6 @@ input[name="CERO"]{
     width: 160px;
     margin-right: 20px;
 }
-
 
 body{
     background-color:#f1f1f1;

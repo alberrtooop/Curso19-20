@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
     <head>
         <title>Calculadora</title>
-        <script type="text/javascript" src="calculadora.js"></script>
+        <meta charset="utf-8" /> 
+        <script src="calculadora.js"></script>
         <link href="Estilos.css" rel="stylesheet" type="text/css" />
     </head>
-
     <body>
         <div class="calculadora">
             <form name="calculadora" id="calculadora">
-                <input type="text" name="txtcaja2" id="txtcaja2" maxlength="3"/>
-                <input type="text" name="txtcaja" id="txtcaja" maxlength="3"/>
+                <input type="text" name="txtcaja2" id="txtcaja2" readonly/>
+                <input type="text" name="txtcaja" id="txtcaja" readonly/>
                 <p>
                     <input type="button" value="CE" onclick="Limpiar()" />
-                    <input type="button" value='<='  onclick="retroceder()">
+                    <input type="button" value='â†'  onclick="retroceder()">
                     <input type="button" value="+/-" onclick="MasMenos()" />
-                    <input type="button" value="÷" onclick="SacarNumero('/')" />
+                    <input type="button" value="&#247;" onclick="SacarNumero('/')" />
 
                 </p>
                 <p>
                     <input type="button" value="7" onclick="SacarNumero('7')" />
                     <input type="button" value="8" onclick="SacarNumero('8')" />
                     <input type="button" value="9" onclick="SacarNumero('9')" />
-                    <input type="button" value="×" onclick="SacarNumero('*')" />
+                    <input type="button" value="&#215;" onclick="SacarNumero('*')" />
                 </p>
 
                 <p>
@@ -47,5 +46,4 @@
             </form>
         </div>
     </body>
-
 </html>
