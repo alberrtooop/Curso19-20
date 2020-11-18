@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #ddd;
+    font-family: "Raleway",Arial,sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+.control-menu{
+    display: none;
+}
+
+@media screen and (min-width: 481px) {
+    ul.nav-items{
+        display: -webkit-box;;
+    }
+
+    ul.nav-items a {
+        color: rgb(255, 255, 255);
+        display: block;
+        height: 3em;
+        line-height: 3em;
+        margin: 0 3.5em;
+    }
+    header {
+        background: blue;
+    }  
+}  
+@media screen and (max-width: 480px) {
+
+    header, #central-content {
+        box-sizing: border-box;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+    header {
+        background: blue;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+        padding: 0.8em 0 0;
+    }
+    header h1 {
+        float: left;
+        padding: 0 0 0.2em;
+    }
+    header h1#logo img {
+        height: 40px;
+        margin-left: 0.5em;
+    }
+    .control-menu {
+        background-color: transparent;
+        background-position: center center;
+        border: 1px solid #fff;
+        display: block;
+        float: left;
+        height: 40px;
+        margin-left: 1.3em;
+        margin-bottom: 1.3em;
+        width: 40px;
+    }
+    .control-menu a span {
+        display: inline-block;
+        height: 40px;
+        text-indent: -99px;
+        width: 40px;
+    }
+    .control-menu .close {
+        background-image: url("../img/close-menu.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: none;
+
+    }
+    .control-menu .open {
+        background-image: url("../img/open-menu.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: block;
+    }
+
+
+    ul.nav-items {
+        clear: both;
+        height: 0;
+        overflow: hidden;
+    }
+
+    #navigation:target ul.nav-items {
+        background: #f0f0f0 none repeat scroll 0 0;
+        height: 15.8em;
+    }
+
+    /*Al hacer clic sobre el enlace que abre el menú éste desaparece*/
+
+    .close { 
+        display:none;
+    }
+
+    #navigation:target .open {
+        display: none;
+    }
+
+    /* Al hacer clic sobre el enlace que abre el menú aparece el enlace .close que previamente estaba oculto*/
+
+    #navigation:target .close {
+        display: block;
+    }
+
+    /*Estilos menu*/
+
+    ul.nav-items li {
+        display: block;
+    }
+    ul.nav-items a {
+        border-top: 2px dotted #dddbdb;
+        color: #333;
+        display: block;
+        height: 3em;
+        line-height: 3em;
+        margin: 0 1.3em;
+    }
+}
+
+
+

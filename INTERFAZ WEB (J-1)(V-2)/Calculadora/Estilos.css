@@ -1,3 +1,8 @@
+/*Ordenadores*/
+body{
+    background-color:#f1f1f1;
+}
+
 input[type="button"]:hover{
     background-color:slategray;
 }
@@ -5,8 +10,9 @@ input[type="button"]:hover{
 form{
     background-color: #484848;
     padding-left: 1%;
+    padding-right: 1%;
     text-align: center;
-    height: 500px;
+    height: 54vh;
     width: 39%;
 }
 
@@ -44,7 +50,7 @@ input[type="button"]{
     font-family: digital;
     width: 16%;
     border: 0px;
-    height: 60px;
+    height: 6vmin;
     color: black;
     background-color: #eeeeee;
     margin-right: 5%;
@@ -59,13 +65,34 @@ input[name="CERO"]{
     margin-right: 5%;
 }
 
-body{
-    background-color:#f1f1f1;
-}
-
-
-@media screen and (min-width: 320px) and (max-width: 480px){
-    #calculadora{
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+      #calculadora{
         width: 100%;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+      #calculadora{
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+      #calculadora{
+        width: 100%;
+    }
+}  
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+      #calculadora{
+        width: 100%;
+    }
+    form{
+    background-color: #484848;
+    padding-left: 1%;
+    text-align: center;
+    }
+}
+
