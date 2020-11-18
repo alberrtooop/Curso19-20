@@ -17,11 +17,11 @@ ul, ol, li {
 }
 
 @media screen and (min-width: 481px) {
-    ul.nav-items{
-        display: -webkit-box;;
+    ul.Menu{
+        display: -webkit-box;
     }
 
-    ul.nav-items a {
+    ul.Menu a {
         color: rgb(255, 255, 255);
         display: block;
         height: 3em;
@@ -44,6 +44,7 @@ ul, ol, li {
         background: blue;
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
         padding: 0.8em 0 0;
+        width: 100%;
     }
     header h1 {
         float: left;
@@ -53,7 +54,7 @@ ul, ol, li {
         height: 40px;
         margin-left: 0.5em;
     }
-    .control-menu {
+    .Opcion {
         background-color: transparent;
         background-position: center center;
         border: 1px solid #fff;
@@ -64,20 +65,20 @@ ul, ol, li {
         margin-bottom: 1.3em;
         width: 40px;
     }
-    .control-menu a span {
+    .Opcion a span {
         display: inline-block;
         height: 40px;
         text-indent: -99px;
         width: 40px;
     }
-    .control-menu .close {
+    .Opcion .close {
         background-image: url("../img/close-menu.png");
         background-position: center center;
         background-repeat: no-repeat;
         display: none;
 
     }
-    .control-menu .open {
+    .Opcion .open {
         background-image: url("../img/open-menu.png");
         background-position: center center;
         background-repeat: no-repeat;
@@ -85,15 +86,16 @@ ul, ol, li {
     }
 
 
-    ul.nav-items {
+    ul.Menu {
         clear: both;
         height: 0;
         overflow: hidden;
     }
 
-    #navigation:target ul.nav-items {
-        background: #f0f0f0 none repeat scroll 0 0;
-        height: 15.8em;
+    #navigation:target ul.Menu {
+        background: #f0f0f0;
+        height: 40vh;
+        width: 100%;
     }
 
     /*Al hacer clic sobre el enlace que abre el menú éste desaparece*/
@@ -114,14 +116,14 @@ ul, ol, li {
 
     /*Estilos menu*/
 
-    ul.nav-items li {
+    ul.Menu li {
         display: block;
     }
-    ul.nav-items a {
+    ul.Menu a {
         border-top: 2px dotted #dddbdb;
         color: #333;
         display: block;
-        height: 3em;
+        height: 7vh;
         line-height: 3em;
         margin: 0 1.3em;
     }
