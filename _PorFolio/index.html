@@ -6,11 +6,11 @@
     <title>Proyecto Final</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="CSS/estilos.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
     <nav class="menu">
-
         <label class="LOGO">LOGO</label>
         <div class="btn_menu">
             <div class="hamburgesa"></div>
@@ -25,9 +25,19 @@
             <li><a href="#">rr</a></li>
         </ul>
     </nav>
-    <div class="hola">
-        hola
-    </div>
+    <section id="hero">
+        <div class="hero-container">
+        </div>
+    </section>
+    <section id="hero">
+        <div class="hero-container">
+            <h1>Welcome to Squad</h1>
+            <h2>We are team of talanted designers making websites with Bootstrap</h2>
+            <a href="#about" class="btn-get-started scrollto"></a>
+        </div>
+    </section>
+    <button id="scrollTopBtn" title="Scroll to Top" type="button" class="btn btn-success"
+        style="display: inline-block; opacity: 1;">▲</button>
 
 
     <script>
@@ -45,6 +55,31 @@
             }
         });
 
+        $('#scrollTopBtn').click(function () {
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 300);
+        });
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('#scrollTopBtn').slideDown(300);
+            } else {
+                $('#scrollTopBtn').slideUp(300);
+            }
+        });
+
+
+        $(document).ready(function () {
+            $(document).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll < 200) {
+                    $(".menu").css({ "top": "0", "background": "transparent" });
+                } else {
+                    $(".menu").css({ "background": "rgba(103, 176, 209, 0.8)" });
+                }
+            });
+        });
     </script>
 
 </body>
