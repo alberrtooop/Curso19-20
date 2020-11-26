@@ -228,8 +228,8 @@ footer{
 }
 
 @media only screen and (max-width:520px) {
-     /*Hamburgesa*/
-     .hamburgesa {
+    /*Hamburgesa*/
+    .hamburgesa {
         width: 35px;
         height: 5px;
         background-color: var(--ColorHamburgesa);

@@ -1,80 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../../CSS/estilos.css" type="text/css"/>
 
-        <title></title>
-        <style type="text/css">
-            #Version{
-                height: 20%;
-                width: 20%;
-            }
-        </style>
-        <script type="text/javascript" src="./Script/ScriptPrueba.js"></script>
-    </head>
-    <body>
-        <h1>Ejercicos JavaScript</h1>
-        <h2>Version del navegador 1</h2>
-        <div id="Version" onmouseover="VersionNavegador()" onmouseout="VersionAnterior(this)">Ver Version</div>
-        <h2>Mostrar URL actual 2</h2>
-        <div id="URL" >
-            <button onclick="MostarURL()">Mostrar URL </button>
-        </div>
-        <h2>Contar titulo y parrafo 3</h2>
-        <div id="BotonContar">
-            <h1 id="ContarH1">Titulo ejercicio</h1>
-            <p id="ContarP">Este parrafo nos cuenta las letras que tiene</p>
-            <button onclick="ContarLetras()">Contar</button>
-        </div>
-        <h2>Invertir colores de fondo 4</h2>
-        <button onclick="InvertirColores()">Invertir Colores</button>
+<head>
+    <title>Desarrollo Web Entorno Cliente</title>
+    <!--estilo-->
+    <link href="./CSS/EstilosJavaScript.css" rel="stylesheet" type="text/css" />
+    <!---->
+    <script type="text/javascript" src="./Script/ScriptPrueba.js"></script>
+</head>
 
-        <h2>Aumentar tamaño letra 5</h2>
-        <p id="Aumento">Aumenta el tamaño cuando lo pulsamos</p>
-        <button onclick="AumentarTamano()">Aumenta Tamaño</button>
+<body onload="contador()">
+    <h1>Desarrollo Web Entorno Cliente</h1>
+    <div>
+        <h2>Contador Visitas</h2>
+        <div id="Visitas"> </div>
+    </div>
 
-        <div>
-            <h2>Usar margenes en punto 6</h2>
-            <p id="Texto">
-                El diario As es una publicación deportiva española de tirada diaria, y de pago y con distribución
-                matinal editado por el Grupo PRISA. Fue fundado en 1967 por Luis Montiel Balanzat y es el segundo 
-                diario deportivo de España, tanto en tirada como en ventas y distribución. Asimismo, su web as.com 
-                ocupa en 2010 la tercera posición por número de visitas en el ranking de diarios nacionales.
-                </br>
-                El diario As es una publicación deportiva española de tirada diaria, y de pago y con distribución
-                matinal editado por el Grupo PRISA. Fue fundado en 1967 por Luis Montiel Balanzat y es el segundo 
-                diario deportivo de España, tanto en tirada como en ventas y distribución. Asimismo, su web as.com 
-                ocupa en 2010 la tercera posición por número de visitas en el ranking de diarios nacionales.
-                </br>
-                El diario As es una publicación deportiva española de tirada diaria, y de pago y con distribución
-                matinal editado por el Grupo PRISA. Fue fundado en 1967 por Luis Montiel Balanzat y es el segundo 
-                diario deportivo de España, tanto en tirada como en ventas y distribución. Asimismo, su web as.com 
-                ocupa en 2010 la tercera posición por número de visitas en el ranking de diarios nacionales.
-            </p>
-            <button onclick="MargenePuntos()">Margen</button>
-        </div>
+    <div>
+        <h2>Ejercicio de ocultar y mostar elemento</h2>
+        <h3>Doble Click</h3>
+        <p id="TextoOculto">
+            Diario deportivo de España, tanto en tirada como en ventas y distribución. Asimismo, su web as.com
+            ocupa en 2010 la tercera posición por número de visitas en el ranking de diarios nacionales.
+        </p>
+        <button ondblclick="OcultarElemento()">Ocultar</button>
+        <button ondblclick="MostrarElemento()">Mostrar</button>
+    </div>
 
-        <h2>Tamaño de la ventana actual 7</h2>
-        <div id="Tamano">        
-            <button onclick="VentanaActual()">Tamaño Actual</button>
-        </div>
+    <div>
+        <h2>Abrir calculadora</h2>
+        <button onclick="DirrigirCalculadora()">calculadora</button>
+    </div>
 
-        <div>
-            <h2>Ejercicio de ocultar y mostar elemento</h2>
-            <p id="TextoOculto">
-                diario deportivo de España, tanto en tirada como en ventas y distribución. Asimismo, su web as.com 
-                ocupa en 2010 la tercera posición por número de visitas en el ranking de diarios nacionales.
-            </p>
+    
+    <div>
+        <h2>Ejercicios Propuestos</h2>
+        <button onclick="Open_Tarea2()">Tarea 2</button>
+        <button onclick="window_open()">Abrir Div</button>
+    </div>
 
-            <button onclick="OcultarElemento()">Ocultar</button>
-            <button onclick="MostrarElemento()">Mostrar</button>
-        </div>
+</body>
 
-        <div>
-            <h2>Dirigir google</h2>
-            <button onclick="DirigirGoogle()">Google</button>
-        </div>
-
-
-    </body>
 </html>

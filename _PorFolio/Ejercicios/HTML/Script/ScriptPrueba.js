@@ -1,41 +1,17 @@
-function VersionNavegador() {
-    var txt = "Version Navegador: " + navigator.appVersion;
-    document.getElementById("Version").innerHTML = txt;
-    document.getElementById("Version").style.backgroundColor = "red";
-}
-function VersionAnterior() {
-    var txt = "Ver Version: ";
-    document.getElementById("Version").innerHTML = txt;
-    document.getElementById("Version").style.backgroundColor = "white";
-}
+function contador() {
+    if (typeof (Storage) !== "undefined") {
+        if (sessionStorage.count) {
 
-function MostarURL() {
-    document.getElementById("URL").innerHTML = window.location;
-}
+            sessionStorage.count = Number(sessionStorage.count) + 1;
 
-function ContarLetras() {
-    var parrafoH1 = document.getElementById("ContarH1").innerHTML;
-    var parrafoP = document.getElementById("ContarP").innerHTML;
-    var texto = "El total de letras de H1 es: " + parrafoH1.length + "</br>";
-    texto += "El total de letras de P es: " + parrafoP.length;
-    document.getElementById("BotonContar").innerHTML = texto;
-}
-function InvertirColores() {
-    document.body.style.backgroundColor = "black";
-    document.body.style.color = "white";
-}
-
-function AumentarTamano() {
-    document.getElementById("Aumento").style.fontSize = "x-large";
-}
-
-function MargenePuntos() {
-    document.body.style.margin = "250px";
-}
-
-function VentanaActual() {
-    document.getElementById("Tamano").innerHTML =
-            "Tamaño de la ventana Actual: " + screen.width + " x " + screen.height;
+        } else {
+            sessionStorage.count = 1;
+        }
+        contadorVisitas = sessionStorage.count;
+        document.getElementById("Visitas").innerHTML = "Has iniciado la pagina " + contadorVisitas + " veces";
+    } else {
+        document.getElementById("Visitas").innerHTML = alert("No soprota la web Storage...");
+    }
 }
 
 
@@ -46,9 +22,19 @@ function OcultarElemento() {
     document.getElementById("TextoOculto").style.display = 'none';
 }
 
-function DirigirGoogle() {
-    window.location.href = 'http://www.google.es';
+function DirrigirCalculadora() {
+    window.location.href = '../Calculadora/Calculadoras.html',"Calculadora", "width=500, height=500, top=85,left=50";
 }
+
+function window_open(url) {
+    window.open("../DIV/PruebaDiv.html", "DIV", "width=500, height=500, top=85,left=50");
+}
+
+
+function Open_Tarea2(url) {
+    window.open("../Tarea 2/tarea2.html", "Tarea 2", "width=500, height=500, top=85,left=50");
+}
+
 
 
 /*
