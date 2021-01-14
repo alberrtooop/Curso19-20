@@ -3,18 +3,20 @@
 
 <head>
     <meta charset='utf-8'>
-    <title>Page Title</title>
+    <title>Primo por javaScript</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src='TareaValidar1_AlbertoMoyano.js'></script>
 </head>
 
 <body>
     <label for="Numero">Numero: </label>
     <input id="NumeroValido" type="number" min="0" max="500" required>
-    <button onclick="Rango()">OK</button>
-
-    <p id="CajaContenido" ></p>
+    <button id="butonPrimo" onclick="Valido()">OK</button>
+    <div id="Valido"></div>
+    <div id="CajaContenido"></div>
+    
 </body>
 
 </html>
