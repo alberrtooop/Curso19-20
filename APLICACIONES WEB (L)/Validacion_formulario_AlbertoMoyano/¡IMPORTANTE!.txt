@@ -1,0 +1,6 @@
+Cuando introduciomos un numero la primera fila es la que nos valida si es correcto o no
+Se iran añadiendo mas fila en la que nos aparecera el numero si es numero primo y si no es pone no es primo
+
+un Numero del 0 al 500   --> OK
+Un numero inferior a 0   --> El valor debe ser inferior o igual a 500
+un numero superior a 500 --> El valor debe ser superior o igual a 0
