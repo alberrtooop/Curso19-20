@@ -1,0 +1,50 @@
+html,body{
+    margin:0px;
+}
+
+#BloqueCentrado{
+    background: whitesmoke;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    text-align: center;
+}
+
+#ValorX{
+    color: red;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+#CentrarSpan{
+    text-align: center;
+}
+
+#cerrarSpan{
+    word-wrap: break-word;
+    width: 485px;
+}
+
+#Sesion{
+    margin-left: 67px;
+}
+
+#bloque2{
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
+#bloque2 a{
+    padding-right: 25px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
