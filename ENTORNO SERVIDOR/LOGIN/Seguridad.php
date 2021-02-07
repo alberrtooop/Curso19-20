@@ -1,6 +1,6 @@
 <?php
 
-include './config/Sentencias.php';
+require './config/Sentencias.php';
 
 class controladorFormularios {
     /*     * ************ *************************************** */

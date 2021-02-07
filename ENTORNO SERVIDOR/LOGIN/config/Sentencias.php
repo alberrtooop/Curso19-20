@@ -1,9 +1,9 @@
 <?php
-require_once 'db.php';
+include_once 'db.php';
 
 class Sentencias {
 
-    public function RegistroUsuario($Tabla, $Datos) {
+    public static function RegistroUsuario($Tabla, $Datos) {
         $query = "INSERT INTO $Tabla (Usuario, Email, Pass, Nombre, Apellidos, Rol) 
         VALUES ( :Usuario, :Email, :Pass, :Nombre, :Apellidos, :Rol)";
 
@@ -23,15 +23,13 @@ class Sentencias {
             sleep(5);
             header("location:index.php");
         }else{
-            print_r(Conexion::Conectar()->error_info());
+            print_r(Conexion::Conectar()->errorInfo());
         }
-        $stmt->close();
-        $stmt = null;
     }
 
 
     
-    public function IngresoUsuario($Tabla, $Campo, $Usuario) {
+    public static function IngresoUsuario($Tabla, $Campo, $Usuario) {
         $query = "SELECT * FROM $Tabla WHERE $Campo = :$Campo";
 
         /*Preparando el Statements*/
@@ -55,10 +53,8 @@ class Sentencias {
         if($stmt->execute()){ 
             return $stmt -> fetchAll();
        }else{
-          print_r(Conexion::Conectar()->error_info());
+          print_r(Conexion::Conectar()->errorInfo());
        }
-       $stmt->close();
-       $stmt = null;
     }
 
 
