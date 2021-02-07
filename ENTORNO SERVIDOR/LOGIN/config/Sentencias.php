@@ -1,5 +1,5 @@
 <?php
-include_once 'db.php';
+include_once "db.php";
 
 class Sentencias {
 
@@ -19,12 +19,12 @@ class Sentencias {
         $stmt->bindParam(':Rol', $Datos['Rol'] , PDO::PARAM_STR);
 
         if($stmt->execute()){
-            echo "ok";
             sleep(5);
             header("location:index.php");
         }else{
             print_r(Conexion::Conectar()->errorInfo());
         }
+        $stmt = null;
     }
 
 
@@ -38,9 +38,8 @@ class Sentencias {
         /*Prerando para enviarlo a la base de datos */
         $stmt->bindParam(":".$Campo, $Usuario, PDO::PARAM_STR);
         $stmt->execute();
-            //sleep(5);
-            //header("location:MiPerfil.php");
-        return $stmt -> fetch();
+         
+        return $stmt->fetch();
     }
     
     static public function MostrarUsuario($Tabla) {
@@ -55,6 +54,7 @@ class Sentencias {
        }else{
           print_r(Conexion::Conectar()->errorInfo());
        }
+       $stmt = null;
     }
 
 

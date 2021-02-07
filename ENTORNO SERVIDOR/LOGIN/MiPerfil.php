@@ -1,18 +1,21 @@
-<?php session_start();
-include_once 'Seguridad.php';
-include_once './config/Sentencias.php';
+<?php 
+session_start();
+
+
+include_once "Seguridad.php";
+include_once "./config/Sentencias.php";
 
 // Intanciando mi objeto
 $pregunta = new controladorFormularios();
 //Session
-/*
-if(isset($_SESSION['Validacion'])){
-    if($_SESSION['Validacion'] != "ok"){
-        header("location:index.php");
+
+if(isset($_SESSION["Validacion"])){
+    if($_SESSION["Validacion"] != "ok"){
+        header("location:MiPerfil.php");
     }
 }else{
     header("location:index.php");
-}*/
+}
 
 ?>
 <!DOCTYPE html>
@@ -26,7 +29,7 @@ if(isset($_SESSION['Validacion'])){
         <title>Registro</title>
     </head>
     <body>  
-        <div class="Salir"><a href="#">Salir</a></div>
+        <div class="Salir"><a href="CerrarSession.php">Salir</a></div>
         <div class="CentroTabla">
             <table class="TablesCss">
                 <thead>
@@ -44,13 +47,13 @@ if(isset($_SESSION['Validacion'])){
                     <?php
                     $item = 1;
                     foreach ($pregunta->Mostrar() as $key => $value) {
-                        ?>
+                     ?>
                         <tr> 
                             <td><?php echo $item++ ?></td>
-                            <td><?php echo $value['Usuario'] ?></td>
-                            <td><?php echo $value['Email'] ?></td>
-                            <td><?php echo $value['Nombre'] ?></td>
-                            <td><?php echo $value['Apellidos'] ?></td>
+                            <td><?php echo $value["Usuario"] ?></td>
+                            <td><?php echo $value["Email"] ?></td>
+                            <td><?php echo $value["Nombre"] ?></td>
+                            <td><?php echo $value["Apellidos"] ?></td>
                             <td>
                                 <form action="borrar.php">
                                     <input class="inputImg" type="image" name="Actualizar" src="IMG/pencil.svg" alt=""/>
