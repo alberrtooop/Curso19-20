@@ -48,3 +48,23 @@ p{
 a{
     text-decoration: none;
 }
+
+/**/
+
+.btnEnviar a{
+  display: inline-block;
+  margin-top: 2px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 15px;
+  border: 1px solid black;
+}
+.btnEnviar a:hover{
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+
+

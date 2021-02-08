@@ -30,7 +30,7 @@
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select>
-                    <input type="submit" id="btnEnviar" value="Enviar" name="btnEnviar"> 
+                    <a href="#"><input type="submit" class="btnEnviar" value="Enviar" name="btnEnviar"></a>
                 </form>             
             </div>
             <div>
@@ -46,7 +46,7 @@
                         <option value="2">2</option>
                         <option value="3">3</option>
                     </select>
-                    <input type="submit" id="btnEnviar" value="Enviar" name="btnEnviar"> 
+                    <a href="#"><input type="submit" class="btnEnviar" value="Enviar" name="btnEnviar"></a>
                 </form>         
             </div>
             <a href="Carrito.php">Ver Compras</a>
@@ -79,11 +79,11 @@
             //Comprueba si un valor existe en un array
             //Si lo que le hemos enviado se encuentra en el array pues entramos
             if (in_array($ID, $lista)) {
-                foreach ($Carrito as $keys => $values) {
+                foreach ($Carrito as $key => $values) {
                     //comprobamos que el ID sea el mismo 
-                    if ($Carrito[$keys]["ID"] == $ID) {
+                    if ($Carrito[$key]["ID"] == $ID) {
                         //le sumamos los nuevos productos
-                        $Carrito[$keys]['Cantidad'] = $Carrito[$keys]['Cantidad'] + $Cantidad;
+                        $Carrito[$key]['Cantidad'] = $Carrito[$key]['Cantidad'] + $Cantidad;
                     }
                 }
             } else {
