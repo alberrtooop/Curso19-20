@@ -49,6 +49,38 @@
                     <a href="#"><input type="submit" class="btnEnviar" value="Enviar" name="btnEnviar"></a>
                 </form>         
             </div>
+            <div>
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                    <label name="Nombre">Call of Duty: Warzone</label>
+                    <input type="hidden" name="Nombre" value="Call of Duty: Warzone">
+                    <label for="precio">70€</label>
+                    <input type="hidden" name="precio" value="70">
+                    <input type="hidden" name="ID" value="57591">
+                    <label for="">Cantidad</label>
+                    <select name="Cantidad">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <input type="submit" id="btnEnviar" value="Enviar" name="btnEnviar"> 
+                </form>         
+            </div>
+            <div>
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                    <label name="Nombre">God of War</label>
+                    <input type="hidden" name="Nombre" value="God of War">
+                    <label for="precio">49€</label>
+                    <input type="hidden" name="precio" value="49">
+                    <input type="hidden" name="ID" value="68549">
+                    <label for="">Cantidad</label>
+                    <select name="Cantidad">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <input type="submit" id="btnEnviar" value="Enviar" name="btnEnviar"> 
+                </form>         
+            </div>
             <a href="Carrito.php">Ver Compras</a>
         </div>
         <?php

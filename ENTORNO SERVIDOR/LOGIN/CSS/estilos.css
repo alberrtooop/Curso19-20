@@ -1,0 +1,136 @@
+*{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    color: #798e94;
+}
+
+body{
+    width: 400px;
+    margin: auto;
+    background-color: #E2ECEE;
+}
+
+.contacto{
+    border: 1px solid #CED5D7;
+    border-radius: 6px;
+    padding: 45px 45px 20px;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 0px 5px 10px #B5C1C5, 0 0 0 10px;
+}
+
+.contacto label{
+    display: block; /* esto es para que el label se sobreponga a la caja de texto */
+    font-weight: bold;
+}
+
+.contacto div{
+    margin-bottom: 15px; /* esto los separara un poco */
+}
+
+.contacto input[type='text']{
+    padding: 7px 6px;
+    width: 294px; /* una longitud definida */
+    border: 1px solid #CED5D7;
+    resize: none; /* esta propiedad es para que el textarea no sea redimensionable */
+    box-shadow:0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+    outline:none;
+}
+
+.contacto input[type='email']{
+    padding: 7px 6px;
+    width: 294px; /* una longitud definida */
+    border: 1px solid #CED5D7;
+    resize: none; /* esta propiedad es para que el textarea no sea redimensionable */
+    box-shadow:0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+    outline:none;
+}
+
+.contacto input[type='password']{
+    padding: 7px 6px;
+    width: 294px; /* una longitud definida */
+    border: 1px solid #CED5D7;
+    box-shadow:0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+    outline:none;
+}
+
+.contacto input[type='submit']:hover{
+    outline: none;
+    background-color: #dda550;
+}
+
+.inputImg{
+    outline: none;
+}
+
+.contacto input[type='submit']{
+    font-size: 17px;
+    line-height: 24px;
+    min-height: 48px;
+    width: 100%;
+    background-color: #e28b09;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    color:white;
+    outline:none;
+}
+
+a{
+    font-size: 17px;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(41, 35, 35);
+    font-size: 17px;
+    text-decoration: none;
+}
+.Salir{
+    text-align: right;
+    width: 50%;
+    top:2%;
+    position: absolute;
+}
+
+.TablesCss {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.TablesCss thead tr th {
+    background-color: #000a61;
+    color: #ffffff;
+    text-align: left;
+}
+
+.TablesCss th,
+.TablesCss td {
+    padding: 12px 15px;
+}
+
+.TablesCss tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.TablesCss tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.CentroTabla{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 48vmin;
+    width: auto;
+}
