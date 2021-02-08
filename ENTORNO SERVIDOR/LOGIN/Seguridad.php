@@ -11,25 +11,28 @@ class controladorFormularios {
     /*     * **************************************************** */
 
     static public function Registro() {
-
-        if (isset($_POST["btnCrear"])) {
-            if (filter_var($_POST["ReEmail"], FILTER_VALIDATE_EMAIL)) {
-                $Tabla = "usuario";
-                $Datos = array(
-                    "Usuario" => $_POST["ReEmail"],
-                    "Email" => $_POST["ReEmail"],
-                    "Pass" => $_POST["RePass"],
-                    "Nombre" => $_POST["ReNom"],
-                    "Apellidos" => $_POST["ReApe"],
-                    "Rol" => 'Usuario'
-                );
-
-                Sentencias::RegistroUsuario($Tabla, $Datos);
-            } else {
+        if (isset($_POST["btnCrear"])) {     
+            if($_POST["RePass"] == $_POST["RePass2"]){
+                if (filter_var($_POST["ReEmail"], FILTER_VALIDATE_EMAIL)) {                      
+                    $Tabla = "usuario";                       
+                    $Datos = array(                            
+                        "Usuario" => $_POST["ReEmail"],                           
+                        "Email" => $_POST["ReEmail"],                          
+                        "Pass" => $_POST["RePass"],                         
+                        "Nombre" => $_POST["ReNom"],                     
+                        "Apellidos" => $_POST["ReApe"],                   
+                         "Rol" => 'Usuario'
+                    );
+                    Sentencias::RegistroUsuario($Tabla, $Datos);
+                } else {
+                    header("location:registro.php");
+                }
+            }else {
                 header("location:registro.php");
             }
         }
     }
+
 
     /*     * **************************************************** */
     /*                     INGRESO                                */
@@ -47,7 +50,7 @@ class controladorFormularios {
            
              if($respuesta["Email"] == $_POST["ValUsu"] && $respuesta["Pass"] == $_POST["Valpass"]){            
                 $_SESSION["Validacion"] = "ok";
-                //sleep(5);
+                sleep(2);
                 header("location:MiPerfil.php");
             }else{
                 header("location:index.php");

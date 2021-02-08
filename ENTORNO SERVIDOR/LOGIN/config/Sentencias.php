@@ -1,7 +1,8 @@
 <?php
-include_once "db.php";
+include "db.php";
 
 class Sentencias {
+
 
     public static function RegistroUsuario($Tabla, $Datos) {
         $query = "INSERT INTO $Tabla (Usuario, Email, Pass, Nombre, Apellidos, Rol) 
@@ -42,6 +43,7 @@ class Sentencias {
         return $stmt->fetch();
     }
     
+
     static public function MostrarUsuario($Tabla) {
         $query = "SELECT * FROM $Tabla";
 

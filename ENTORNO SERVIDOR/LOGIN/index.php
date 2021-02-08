@@ -8,7 +8,7 @@
     <title>Registro</title>
 </head>
 <body>  
-        <form class="contacto" action="Seguridad.php" method="POST">
+        <form class="contacto" id="contacto" action="Seguridad.php" method="POST">
             <div>
                 <label for="Email">Usuario</label>
                 <input type="text" name="ValUsu"/>

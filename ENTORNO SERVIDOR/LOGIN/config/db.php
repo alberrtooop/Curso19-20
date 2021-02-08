@@ -24,7 +24,7 @@ class Conexion {
     }*/
 
     public static function Conectar(){
-        $link = new PDO("mysql:host=localhost;dbname=usuarios","root","root");
+        $link = new PDO("mysql:host=localhost;dbname=usuarios","root","");
 
         $link->exec("set names utf8");
 

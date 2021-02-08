@@ -13,10 +13,6 @@ if(isset($_SESSION["Validacion"])){
     if($_SESSION["Validacion"] != "ok"){
         header("location:MiPerfil.php");
     }
-}else{
-    header("location:index.php");
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -71,3 +67,8 @@ if(isset($_SESSION["Validacion"])){
         </div>
     </body>
 </html>
+
+<?php
+}else{
+    header("location:index.php");
+}
