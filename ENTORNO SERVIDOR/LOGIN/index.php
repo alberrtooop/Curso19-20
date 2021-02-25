@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,22 @@
     <link rel="stylesheet" href="./CSS/estilos.css">
     <title>Registro</title>
 </head>
-<body>  
-        <form class="contacto" id="contacto" action="Seguridad.php" method="POST">
-            <div>
-                <label for="Email">Usuario</label>
-                <input type="text" name="ValUsu"/>
-            </div>
-            <div>
-                <label for="Pass">Contraseña</label>
-                <input type="password" name="Valpass"/>
-            </div>
-            <div>
-                <input type="submit" name="btnEntrar" value="Entrar"/>
-            </div>
-            <div class="letraA"><a href="registro.php">Registrate ahora</a></div>
-        </form>
+
+<body>
+    <form class="contacto" id="contacto" action="Seguridad.php" method="POST">
+        <div>
+            <label for="Email">Usuario</label>
+            <input type="text" name="ValUsu" />
+        </div>
+        <div>
+            <label for="Pass">Contraseña</label>
+            <input type="password" name="Valpass" />
+        </div>
+        <div>
+            <input type="submit" name="btnEntrar" value="Entrar" />
+        </div>
+        <div class="letraA"><a href="registro.php">Registrate ahora</a></div>
+    </form>
 </body>
+
 </html>

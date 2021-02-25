@@ -1,0 +1,215 @@
+*{
+    font-family: 'Neue-Helvetica', 'Helvetica', 'Arial', Sans-Serif;
+}
+
+/* CSS PARA La ETIQUETA a  */ 
+a{
+    font-size: 17px;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(41, 35, 35);
+    font-size: 17px;
+    text-decoration: none;
+}
+
+/*CSS BORRAR LETRA REGISTRO*/
+.letraA{
+    display: none;
+}
+
+/*CSS PARA EL BOTON SALIR */
+.Salir{
+    text-align: right;
+    width: 50%;
+    top:2%;
+    position: absolute;
+}
+
+/* CSS PARA LA ETIQUETA P*/
+.claseP{
+    font-size: 9px;
+    line-height: 12px;
+    letter-spacing:0.4px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+/* CSS DE SESIONES DE REGISTRO Y LOGIN DEL USUARIO */
+.section-log-in, .section-register {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.logon-view__section-title{
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    font-stretch: condensed;
+    font-weight: 500;
+}
+
+/*  CSS PARA PASS   */
+#Pass{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.FormCentrado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divSubmit{
+    width: 100%;
+}
+
+.divRegistro{
+    width: 25%;
+}
+
+.contacto label{
+    display: block; /* esto es para que el label se sobreponga a la caja de texto */
+    font-weight: bold;
+}
+
+.contacto div{
+    margin-bottom: 15px; /* esto los separara un poco */
+    margin-top: 15px;
+}
+
+.contacto .Select{
+    padding: 7px 6px;
+    width: 308px; /* una longitud definida */
+    border: 1px solid #CED5D7;
+    resize: none; /* esta propiedad es para que el textarea no sea redimensionable */
+    box-shadow:0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+    outline:none;
+    width: 100%;
+}
+
+.contacto input[type='text']{
+    padding: 7px 6px;
+    width: 294px; /* una longitud definida */
+    border: 1px solid #CED5D7;
+    resize: none; /* esta propiedad es para que el textarea no sea redimensionable */
+    box-shadow:0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+    outline:none;
+    width: 100%;
+}
+
+.contacto input[type='email']{
+    padding: 7px 6px;
+    width: 294px; /* una longitud definida */
+    border: 1px solid #CED5D7;
+    resize: none; /* esta propiedad es para que el textarea no sea redimensionable */
+    box-shadow:0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+    outline:none;
+    width: 100%;
+}
+
+.contacto input[type='password']{
+    padding: 7px 6px;
+    width: 294px; /* una longitud definida */
+    border: 1px solid #CED5D7;
+    box-shadow:0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+    outline:none;
+    width: 100%;
+}
+
+.contacto input[type='submit']:hover{
+    outline: none;
+    background-color: rgb(77, 77, 77);
+    width: 100%;
+}
+
+.contacto input[type='submit']{
+    font-size: 17px;
+    line-height: 24px;
+    min-height: 48px;
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    color:white;
+    outline:none;
+    margin-top: 20px;
+    background: black;
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    font-stretch: condensed;
+}
+
+/*  CSS PARA BUTTON   */
+#botonRegistro{
+    /* padding-top: 57px; */
+    font-size: 17px;
+    line-height: 24px;
+    min-height: 48px;
+    width: 100%;
+    /* padding: 8px 16px; */
+    border-radius: 4px;
+    /* border: 1px solid transparent; */
+    color: white;
+    outline: none;
+    /* margin-top: 20px; */
+    background: black;
+    border: 1px solid black;
+    cursor: pointer;
+    /* padding: 10px; */
+    text-align: center;
+    font-stretch: condensed;
+}
+.botonRegistro{
+    margin-top: 93px !important;
+}
+
+.contacto #botonRegistro:hover{
+    outline: none;
+    background-color: rgb(77, 77, 77);
+    width: 100%;
+}
+
+/*  MEDIA QUERY PARA LOGIN    */
+@media screen and (max-width: 767px){
+    .section-log-in{
+        padding: 40px 20px 0 34px;
+    }
+
+    .section-register{
+        display: none;
+    }
+
+    .letraA{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .contacto, button {
+        max-width: 240px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .section-log-in, .section-register {
+        width: calc(calc((100% - 20px * 11) / 12) * 4 + 20px * 3) !important;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .section-log-in, .section-register {
+        margin-right: 20px;
+    }
+}
+
+/*================================*/

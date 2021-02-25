@@ -13,11 +13,11 @@ body{
 .contacto{
     border: 1px solid #CED5D7;
     border-radius: 6px;
-    padding: 45px 45px 20px;
-    margin-top: 50px;
+    padding: 23px 45px 70px;
+    margin-top: 32px;
     background-color: white;
-    box-shadow: 0px 5px 10px #B5C1C5, 0 0 0 10px;
-    height: 480px;
+    box-shadow: 0px 5px 10px #b5c1c5, 0 0 0 10px;
+    height: 500px;
 }
 
 #contacto{
@@ -31,6 +31,12 @@ body{
 
 .contacto div{
     margin-bottom: 15px; /* esto los separara un poco */
+    margin-top: 15px;
+}
+
+#Pass{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 .contacto input[type='text']{
@@ -51,6 +57,22 @@ body{
     box-shadow:0 0 0 3px #EEF5F7;
     margin: 5px 0;
     outline:none;
+}
+
+
+.contacto .Select{
+    padding: 7px 6px;
+    width: 308px; /* una longitud definida */
+    border: 1px solid #CED5D7;
+    resize: none; /* esta propiedad es para que el textarea no sea redimensionable */
+    box-shadow:0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+    outline:none;
+}
+
+.TablesCss .SelectPerfil{
+    outline:none;
+    width: 70px;
 }
 
 .contacto input[type='password']{

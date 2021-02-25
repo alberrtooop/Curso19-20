@@ -1,3 +1,85 @@
+/*
 span{display:block;font-size:.8em;margin:0px 0 10px;padding:5px 0 5px 11px;width:200px}
 .confirmacion{background:#C6FFD5;border:1px solid green;}
-.negacion{background:#ffcccc;border:1px solid red}
+.negacion{background:#ffcccc;border:1px solid red}*/
+
+
+#Error{
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.Short {
+    width: 100%;
+    background-color: #dc3545;
+    margin-top: 5px;
+    height: 3px;
+    color: white !important;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.Weak {
+    width: 100%;
+    background-color: #f8c52b;
+    margin-top: 5px;
+    height: 3px;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+}
+.Good {
+    width: 100%;
+    background-color: #41f16a;
+    margin-top: 5px;
+    height: 3px;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+}
+.Strong {
+    width: 100%;
+    background-color: green;
+    margin-top: 5px;
+    height: 3px;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.Izquierda{
+    color: #798e94;
+    padding-top: 6px;
+    position: absolute;
+}
+
+
+.UsuarioNo{
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    background-color: crimson;
+    color: white;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.UsuarioSi{
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    background-color: green;
+    color: white;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

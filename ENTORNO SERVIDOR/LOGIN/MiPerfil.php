@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 
 
@@ -9,13 +9,14 @@ include_once "./config/Sentencias.php";
 $pregunta = new controladorFormularios();
 //Session
 
-if(isset($_SESSION["Validacion"])){
-    if($_SESSION["Validacion"] != "ok"){
+if (isset($_SESSION["Validacion"])) {
+    if ($_SESSION["Validacion"] != "ok") {
         header("location:MiPerfil.php");
     }
 ?>
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +25,8 @@ if(isset($_SESSION["Validacion"])){
         <link rel='stylesheet' href='./CSS/estilos.css'>
         <title>Registro</title>
     </head>
-    <body>  
+
+    <body>
         <div class="Salir"><a href="CerrarSession.php">Salir</a></div>
         <div class="CentroTabla">
             <table class="TablesCss">
@@ -35,6 +37,7 @@ if(isset($_SESSION["Validacion"])){
                         <th>Email</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
+                        <th>Rol</th>
                         <th>Actualizar</th>
                         <th>Borrar</th>
                     </tr>
@@ -43,32 +46,41 @@ if(isset($_SESSION["Validacion"])){
                     <?php
                     $item = 1;
                     foreach ($pregunta->Mostrar() as $key => $value) {
-                     ?>
-                        <tr> 
+                    ?>
+                        <tr>
                             <td><?php echo $item++ ?></td>
                             <td><?php echo $value["Usuario"] ?></td>
                             <td><?php echo $value["Email"] ?></td>
                             <td><?php echo $value["Nombre"] ?></td>
                             <td><?php echo $value["Apellidos"] ?></td>
                             <td>
-                                <form action="borrar.php">
-                                    <input class="inputImg" type="image" name="Actualizar" src="IMG/pencil.svg" alt=""/>
+                                <select class="SelectPerfil" name="Rol">
+                                    <option value="<?php echo $value["Rol"] ?>"><?php echo $value["Rol"] ?></option>
+                                </select>
+
+                            </td>
+                            <td>
+                                <form action="actualizar.php" method="POST">
+                                    <input type="hidden" name="ID" value="<?php echo $value["ID_Usuario"] ?>" />
+                                    <input class="inputImg" type="image" name="Actualizar" src="IMG/pencil.svg" alt="" />
                                 </form>
                             </td>
-                            <td> 
-                                <form action="actualizar.php">
-                                    <input class="inputImg" type="image" name="Actualizar" src="IMG/trash.svg" alt=""/>
-                                </form>             
+                            <td>
+                                <form action="Borrar.php" method="POST">
+                                    <input type="hidden" name="ID" value="<?php echo $value["ID_Usuario"] ?>" />
+                                    <input class="inputImg" type="image" name="Actualizar" src="IMG/trash.svg" alt="" />
+                                </form>
                             </td>
-                        </tr> 
+                        </tr>
                     <?php } ?>
                 </tbody>
             </table>
         </div>
     </body>
-</html>
+
+    </html>
 
 <?php
-}else{
+} else {
     header("location:index.php");
 }

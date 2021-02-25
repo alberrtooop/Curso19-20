@@ -1,0 +1,255 @@
+*{
+    font-family: 'Neue-Helvetica', 'Helvetica', 'Arial', Sans-Serif;
+    box-sizing: border-box;
+}
+
+form{
+    max-width: 860px;
+}
+
+/* CSS PARA La ETIQUETA a  */ 
+a{
+    font-size: 17px;
+    text-decoration: none;
+}
+
+a:hover{
+    color:rgb(41, 35, 35);
+    font-size: 17px;
+    text-decoration: none;
+}
+
+/*CSS BORRAR LETRA REGISTRO*/
+.letraA{
+    display: none;
+}
+
+/*CSS PARA EL BOTON SALIR */
+.Salir{
+    text-align: right;
+    width: 50%;
+    top:2%;
+    position: absolute;
+}
+
+/* CSS PARA LA ETIQUETA P*/
+.claseP{
+    font-size: 9px;
+    line-height: 12px;
+    letter-spacing:0.4px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+/* CSS DE TITULO */
+.layout__title{
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    font-stretch: condensed;
+    font-weight: 500;
+}
+
+/*  CSS para que se queden en dos columnas los input  */
+.layout-user__content {
+    padding-left: calc(18px + 16px);
+}
+
+.form__fields{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__column {
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding-top: 3%;
+}
+
+.FormCentrado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*CSS de los INPUT*/
+.divSubmit{
+    width: 100%;
+}
+
+.divRegistro{
+    width: 25%;
+}
+
+.contacto label{
+    display: block; /* esto es para que el label se sobreponga a la caja de texto */
+    font-weight: bold;
+    font-size: 9px;
+    line-height: 12px;
+    letter-spacing:0.4px;
+    text-transform: uppercase;
+}
+
+.contacto .Select{
+    font-size: 10px;
+    width: 294px;
+    /* padding: 12px 6px !important; */
+    /*padding-top: 21px !important;*/
+    /* border: 1px solid #CED5D7; */
+    resize: none;
+    /* box-shadow: 0 0 0 3px #eef5f7; */
+    /* margin: 5px 0; */
+    outline: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+    cursor: inherit;
+    margin: 0;
+    /* padding: 0; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* text-indent: 1px; */
+    /*text-overflow: "";*/
+}
+/*
+.form-input-select__arrow {
+    right: 137px;
+    bottom: 14px;
+    position: absolute;
+}*/
+
+svg {
+    fill: inherit;
+}
+
+.contacto input[type='text']{
+    font-size: 10px;
+    padding: 7px 0 0 0;
+    width: 294px; /* una longitud definida */
+    /*border: 1px solid #CED5D7;*/
+    resize: none; /* esta propiedad es para que el textarea no sea redimensionable */
+    /*box-shadow:0 0 0 3px #EEF5F7;*/
+    margin: 7px 0 0 0;
+    border: none;
+    outline:none;
+}
+
+.contacto input[type='email']{
+    font-size: 10px;
+    padding: 7px 0 0 0;
+    width: 294px;
+    /* border: 1px solid #CED5D7; */
+    resize: none;
+    /* box-shadow: 0 0 0 3px #eef5f7; */
+    margin: 7px 0 0 0;
+    border: none;
+    outline: none;
+}
+
+.contacto input[type='password']{
+    font-size: 10px;
+    padding: 7px 0 0 0;
+    width: 294px; /* una longitud definida */
+    /*border: 1px solid #CED5D7;*/
+    /*box-shadow:0 0 0 3px #EEF5F7;*/
+    margin: 7px 0 0 0;
+    border: none;
+    outline:none;
+  
+}
+
+.contacto input[type='submit']:hover{
+    outline: none;
+    background-color: rgb(77, 77, 77);
+}
+
+.form-input-label {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 4px;
+    padding-top: 20px;
+}
+
+.contacto input[type='submit']{
+    font-size: 17px;
+    line-height: 24px;
+    min-height: 48px;
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    color: white;
+    outline: none;
+    margin-top: 70px;
+    background: black;
+    border: 1px solid black;
+    cursor: pointer;
+    /* padding: 10px; */
+    text-align: center;
+    font-stretch: condensed;
+}
+
+
+/*  CSS PARA BUTTON   */
+#botonRegistro{
+    /* padding-top: 57px; */
+    font-size: 17px;
+    line-height: 24px;
+    min-height: 48px;
+    width: 100%;
+    /* padding: 8px 16px; */
+    border-radius: 4px;
+    /* border: 1px solid transparent; */
+    color: white;
+    outline: none;
+    /* margin-top: 20px; */
+    background: black;
+    border: 1px solid black;
+    cursor: pointer;
+    /* padding: 10px; */
+    text-align: center;
+    font-stretch: condensed;
+}
+.botonRegistro{
+    margin-top: 93px !important;
+}
+
+.contacto #botonRegistro:hover{
+    outline: none;
+    background-color: rgb(77, 77, 77);
+    width: 100%;
+}
+
+/*  MEDIA QUERY PARA LOGIN    */
+@media screen and (max-width: 767px){
+    .letraA{
+        display: block;
+    }
+
+    /*
+    .form-input-select__arrow {
+        right: 158px;
+    }*/
+}
+
+@media screen and (min-width: 768px){
+    
+    button {
+        max-width: 240px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .layout__content {
+        margin: 15px calc(((100vw - 1084px) / 2)) 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .form__column {
+        width: 50%;
+    }  
+}
+/*================================*/
