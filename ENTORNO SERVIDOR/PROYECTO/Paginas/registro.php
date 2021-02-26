@@ -18,7 +18,7 @@
     <div class="layout__content">
         <div class="layout-user__content">
             <h1 class="layout__title"><span>Datos personales</span></h1>
-            <form class='contacto' id="formregistro" action="prueba.php" method="POST">
+            <form class='contacto' id="formregistro" action="../Seguridad/Seguridad.php" method="POST">
                 <div class="form__fields">
                     <div class="form__column">
                         <div class="form-input-label"><label>Email</label><input id="email" type='email' onBlur="comprobarEmail()" name="Re_Email" value='' placeholder="Email" required /></div>
@@ -45,13 +45,13 @@
                     <div class="form__column">
                         <div class="form-input-label">
                             <label>Dirección</label>
-                            <input type='text' name="direccion" placeholder="Dirección" required />
+                            <input type='text' name="Direccion" placeholder="Dirección" required />
                         </div>
                     </div>
                     <div class="form__column">
                         <div class="form-input-label">
                             <label>PISO/PUERTA U OTRO</label>
-                            <input type='text' name="direccion_anadida" placeholder="opcional" />
+                            <input type='text' name="Piso_Puerta" placeholder="opcional" />
                         </div>
                     </div>
 
@@ -136,7 +136,7 @@
                     <div class="form__column">
                         <div class="form-input-label">
                             <label>Teléfono</label>
-                            <input type='text' name="telefono" placeholder="Teléfono" />
+                            <input type='text' name="Telefono" placeholder="Teléfono" />
                         </div>
                     </div>
 

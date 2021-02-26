@@ -5,23 +5,27 @@ class Sentencias
 {
     public static function RegistroUsuario($Tabla, $Datos)
     {
-        $query = "INSERT INTO $Tabla (Usuario, Email, Pass, Nombre, Apellidos, Rol) 
-        VALUES ( :Usuario, :Email, :Pass, :Nombre, :Apellidos, :Rol)";
+        $query = "INSERT INTO $Tabla (CorreoElectronico, Contrasena, Nombre, Apellidos, Direccion, Piso_Puerta, CodigoPostal, Telefono ) 
+        VALUES ( :Email, :Contrasena, :Nombre, :Apellidos, :Direccion, :Piso_Puerta, :CodigoPostal, :Telefono)";
 
         /*Preparando el Statements*/
         $stmt = Conexion::Conectar()->prepare($query);
 
+        
+
         /*Prerando para enviarlo a la base de datos */
-        $stmt->bindParam(':Usuario', $Datos['Usuario'], PDO::PARAM_STR);
         $stmt->bindParam(':Email', $Datos['Email'], PDO::PARAM_STR);
-        $stmt->bindParam(':Pass', $Datos['Pass'], PDO::PARAM_STR);
+        $stmt->bindParam(':Contrasena', $Datos['Contrasena'], PDO::PARAM_STR);
         $stmt->bindParam(':Nombre', $Datos['Nombre'], PDO::PARAM_STR);
         $stmt->bindParam(':Apellidos', $Datos['Apellidos'], PDO::PARAM_STR);
-        $stmt->bindParam(':Rol', $Datos['Rol'], PDO::PARAM_STR);
-
+        $stmt->bindParam(':Direccion', $Datos['Direccion'], PDO::PARAM_STR);
+        $stmt->bindParam(':Piso_Puerta', $Datos['Piso_Puerta'], PDO::PARAM_STR);
+        $stmt->bindParam(':CodigoPostal', $Datos['CP'] , PDO::PARAM_INT);
+        $stmt->bindParam(':Telefono', $Datos['Telefono'], PDO::PARAM_STR);
+    
         if ($stmt->execute()) {
             sleep(5);
-            header("location:index.php");
+            header("location:../index.php");
         } else {
             print_r(Conexion::Conectar()->errorInfo());
         }

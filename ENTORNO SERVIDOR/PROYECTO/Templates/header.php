@@ -135,8 +135,13 @@
             </div>
             <!-- menu end here -->
             <div class="header-item item-right">
-                <a href="/Proyecto/Paginas/Login.php"><img class="item" src="../IMG/icon/user.png" /></a>
-                <a href="#"><img class="item" src="../IMG/icon/carrito-de-compras.png" /></a>
+                <?php
+                if (isset($_SESSION['cart'])){
+                    echo "<p class='User'>Bienvenido!, alberto</p>";
+                    }else{?>
+                    <a href="/Proyecto/Paginas/Login.php"><img class="item" src="../IMG/icon/user.png" /></a>
+                    <?php } ?>
+                <a href="/Proyecto/Paginas/Cesta.php"><img class="item" src="../IMG/icon/carrito-de-compras.png" /></a>
                 <!-- mobile menu trigger -->
                 <div class="mobile-menu-trigger">
                     <span></span>

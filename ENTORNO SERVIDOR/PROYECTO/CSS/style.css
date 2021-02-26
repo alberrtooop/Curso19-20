@@ -32,6 +32,10 @@ ul{
 	margin:0;
 	padding:0;
 }
+/*Bienvenido clase*/
+.User{
+	width: 155px;
+}
 
 a{
 	text-decoration: none;
@@ -49,11 +53,11 @@ a{
 }
 
 .header .item-center{
-	flex:0 0 66%;
+	flex:0 0 64%;
 }
 .header .item-right{
 	flex:0 0 17%;
-	display: flex;
+	display: contents;
 	justify-content: flex-end;
 }
 .header .item-right a{ 
@@ -93,6 +97,12 @@ a{
 	margin-top: 0;
 	visibility: visible;
 	opacity: 1;
+	}
+
+	.header .item-right{
+		flex:0 0 17%;
+		display: flex !important;
+		justify-content: flex-end;
 	}
 }
 .header .menu > ul > li .sub-menu > ul > li{

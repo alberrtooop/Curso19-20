@@ -15,18 +15,23 @@ class controladorFormularios
     {
         $Tabla = "usuario";
         if (isset($_POST["btnCrear"])) {
-            if (Sentencias::ComprobarUsu($Tabla, $_POST["ReEmail"]) == 0) {
-                if ($_POST["RePass"] == $_POST["RePass2"]) {
-                    if (filter_var($_POST["ReEmail"], FILTER_VALIDATE_EMAIL)) {
+            if (Sentencias::ComprobarUsu($Tabla, $_POST["Re_Email"]) == 0) {
+                if ($_POST["Re_Pass"] == $_POST["Re_Pass2"]) {
+                    if (filter_var($_POST["Re_Email"], FILTER_VALIDATE_EMAIL)) {
 
+                        
                         $Datos = array(
-                            "Usuario" => $_POST["ReEmail"],
-                            "Email" => $_POST["ReEmail"],
-                            "Pass" => $_POST["RePass"],
-                            "Nombre" => $_POST["ReNom"],
-                            "Apellidos" => $_POST["ReApe"],
-                            "Rol" => $_POST["Rol"]
+                            "Email" => $_POST["Re_Email"],
+                            "Contrasena" => $_POST["Re_Pass"],
+                            "Nombre" => $_POST["Re_Nombre"],
+                            "Apellidos" => $_POST["Re_Apellido"],
+                            "Direccion" => $_POST["Direccion"],
+                            "Piso_Puerta" => $_POST["Piso_Puerta"],
+                            "CP" => $_POST["CP"],
+                            "Telefono" => $_POST["Telefono"]
                         );
+
+                        print_r($Datos);
                         Sentencias::RegistroUsuario($Tabla, $Datos);
                     } else {
                         header("location:registro.php");
