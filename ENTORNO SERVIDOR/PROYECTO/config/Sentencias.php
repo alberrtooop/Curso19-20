@@ -149,4 +149,22 @@ class Sentencias
         }
         $stmt = null;
     }
+
+
+    public static function MostrarProductos($Tabla, $id_cat)
+    {
+        $query = "SELECT * FROM $Tabla WHERE id_cat = $id_cat";
+
+        /*Preparando el Statements*/
+        $stmt = Conexion::Conectar()->prepare($query);
+
+        $stmt->execute();
+        if ($stmt->execute()) {
+            return $stmt->fetchAll();
+        } else {
+            print_r(Conexion::Conectar()->errorInfo());
+        }
+        $stmt = null;
+    }
+
 }

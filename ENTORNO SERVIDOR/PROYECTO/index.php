@@ -1,7 +1,7 @@
 <?php 
 session_start();
 $_SESSION['cart'] = 0;
-
+session_unset();
 session_destroy();
 
 
@@ -77,7 +77,7 @@ session_destroy();
 									<div class="list-item">
 										<h4 class="title">Men's Fashion</h4>
 										<ul>
-											<li><a href="#">Product List</a></li>
+											<li><a href="/PROYECTO/Pagina_Productos/Productos.php?ID=1">Product List</a></li>
 											<li><a href="#">Product List</a></li>
 											<li><a href="#">Product List</a></li>
 											<li><a href="#">Product List</a></li>
